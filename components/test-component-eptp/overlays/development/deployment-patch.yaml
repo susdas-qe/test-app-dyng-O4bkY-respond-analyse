@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-eptp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas/test-images@sha256:ff7e2a5b63d7fd3f06c64cb12ab5e8fab562e2ae56fa59b99f78fc709845df4f
+        name: my-python
+        resources: {}
+status: {}
